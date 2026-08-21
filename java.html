@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Java Assignments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f2a;
+      color: white;
+      padding: 40px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: orange;
+      margin-bottom: 40px;
+    }
+    .day {
+      background: #151a3a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid orange;
+      border-radius: 10px;
+      transition: 0.3s;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .day:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255,165,0,0.4);
+    }
+  .day-info {
+      flex: 1;
+      color: white;
+    }
+    .day h3 {
+      margin-bottom: 10px;
+      color: orange;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    /* Image section */
+    .img-section {
+      width: 200px;
+      flex-shrink: 0;
+    }
+    .img-section .img-label {
+      font-size: 12px;
+      color: orange;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .img-section a img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(255,165,0,0.4);
+      display: block;
+      cursor: zoom-in;
+      transition: border-color 0.2s;
+    }
+    .img-section a img:hover {
+      border-color: orange;
+    }
+
+    /* CSS-only lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 10px;
+      border: 2px solid orange;
+    }
+    .lightbox-close {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 38px;
+      color: orange;
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    @media (max-width: 600px) {
+      .day { flex-direction: column; }
+      .img-section { width: 100%; }
+      .img-section a img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Lightboxes — replace src with your screenshot filenames -->
+<div class="lightbox" id="lb1">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java1.png" alt="Day 1 Screenshot">
+</div>
+<div class="lightbox" id="lb2">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java 2.png" alt="Day 2 Screenshot">
+</div>
+<div class="lightbox" id="lb3">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java3.png" alt="Day 3 Screenshot">
+</div>
+<div class="lightbox" id="lb4">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java4.png" alt="Day 4 Screenshot">
+</div>
+<div class="lightbox" id="lb5">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java5.png" alt="Day 5 Screenshot">
+</div>
+<div class="lightbox" id="lb6">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="Java6.png" alt="Day 6 Screenshot">
+</div>
+<div class="lightbox" id="lb7">
+  <a class="lightbox-close" href="#">&times;</a>
+  <img src="JavaP.png" alt="Day 7 Screenshot">
+</div>
+
+<a href="index.html">⬅ Back to Portfolio</a>
+<h1>Java Assignments</h1>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 1 – Introduction to Java & Basics</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>What is Java & Where it is Used?</li>
+      <li>How Java Works & Development Tools</li>
+      <li>Printing Output & Basic Syntax</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb1"><img src="Java1.png" alt="Day 1"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 2 – Variables, Data Types & Loops</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>int, float, double, char, boolean, String</li>
+      <li>for loop, while loop, do-while loop and break/continue</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb2"><img src="Java 2.png" alt="Day 2"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 3 – Operators & Conditional Statements</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>What is Operator?</li>
+      <li>Types of Operator - Arithmetic Operator, Relational Operator, Logical Operator, Assignment Operators, Unary Operators, Bitwise Operators, Shift Operators, Ternary Operator</li>
+      <li>Conditional Statements - if Statement, if-else Statement, if-else-if Ladder, Nested if, switch Statement</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb3"><img src="Java3.png" alt="Day 3"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 4 – Object-Oriented Programming  in Java</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>Class</li>
+      <li>Attributes</li>
+      <li>Method</li>
+      <li>Object</li>
+      <li>Constructor</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb4"><img src="Java4.png" alt="Day 4"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 5 – Methods & Array</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>Methods in Java</li>
+      <li>Operating on Arrays</li>
+      <li>Combining Methods + Arrays</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb5"><img src="Java5.png" alt="Day 5"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 6 – Four Pillars of OOP</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>Encapsulation - Binding data and methods together</li>
+      <li>Inheritance - Reusing properties and methods of another class</li>
+      <li>Polymorphism - One method/interface behaving in different ways</li>
+      <li>Abstraction - Hiding implementation details and showing essential features</li>
+    </ul>
+    
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb6"><img src="Java6.png" alt="Day 6"></a>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-info">
+    <h3>Day 7 – Movie Ticket Booking Project</h3>
+    <p><b>Topics Covered:</b></p>
+    <ul>
+      <li>Classes & Objects - To manage movies, customers, tickets, and bookings.</li>
+      <li>Conditinal Statements & Loops - For menus, movie/seat selection, and repeated operations.</li>
+      <li>Arrays/ArrayList & Methods - To store movie/seat data and organize booking functions.</li>
+    </ul>
+  </div>
+  <div class="img-section">
+    <div class="img-label">Screenshot</div>
+    <a href="#lb7"><img src="JavaP.png" alt="Day 7"></a>
+  </div>
+</div>
+
+</body>
+</html>
